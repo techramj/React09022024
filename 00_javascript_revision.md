@@ -199,12 +199,160 @@ Vanilla JS: java script without any libraries.
 
 ## function
 
+    function add(a, b){
+    console.log('result: ', (a+b))
+    }
+
+
+    const add1 = function(a,b){
+    console.log('result: ', (a+b))
+    }
+
+
+    let add2 = (a,b) => {
+    console.log('result: ', (a+b));
+    }
+
+    add(10,20);
+    add1(100,200);
+    add2(200,300);
 
 
 
 
+## ES6 feature
+### export and import
+    note: add the property type:'module' in package.json
+#### example 1
+      one.js
+      -------
+      export  let name =  'jack';
+
+      index.js
+      --------
+      import {name} from './one.js';
+
+      note: In react, we will not give the extension.
+
+#### example 2
+    In one js file, only one default value is allowed
+    one.js
+    ------
+    export default "jack";
+
+
+    index.js
+    -------
+    import anyName from './one.js';
+    console.log(anyName); //jack
+    note: to import default value, don't use curly braces.
+
+
+#### example 3
+    one.js
+    -----
+    export default "John";
+    export let age = 30;
+    export let nationality = "Indian";
+
+    index.js
+    --------
+    import name1, {age, nationality as citizen} from "./one.js";
+    console.log(anyName, age, citizen );
+
+#### example 4
+     one.js
+     -----
+    export default "John";
+    export let age = 30;
+    export let nationality = "Indian";
+
+
+    index.js
+    --------
+    import * as person from "./one.js";
+
+    console.log(person.default, person.age, person.nationality );
 
 
 
+### Passing function as value in js
+    function action1(){
+    console.log('action1 performed');
+    }
 
+    let action2 = function(){
+    console.log('action2 performed');
+    }
 
+    let action3 = ()=> {
+    console.log('action3 performed');
+    }
+
+    setTimeout(action1, 1000);
+    setTimeout(action2, 1000);
+    setTimeout(action3, 1000);
+    setTimeout(function(){
+        console.log('action4 performed');
+    }, 2000);
+
+    setTimeout(()=>{
+        console.log('action5 performed');
+    },3000);
+-------------------------------------------------------------------------------
+    function greeter(a) {
+        a();
+    }
+
+    function greet() {
+        console.log("Good afternoon!!!");
+    }
+
+    greeter(greet); //passing function as a value
+
+    greeter(function () {
+        console.log("Good evening!!!");
+    });
+
+    greeter(() => {
+        console.log("good day!!!");
+    });
+
+--------------------------------------------------------------
+    //rule of arrow operator
+    //function to calcualte square or number
+    function square(num){
+        return num*num;
+    }
+
+    let square1 = function(num){
+        return num*num;
+    }
+
+    //let square2 = (num) => {return num*num};
+    //let square2 = num => {return num*num};
+    let square2 = num => num*num;
+
+    console.log(square(10));
+    console.log(square1(10));
+    console.log(square2(10));
+
+    //rule no 1: if there is only one parameter, you can remove the parenthesis
+
+    // rule no 2: if there is only one statement, you can remove the curly braces
+
+### //destructuring of an object
+
+    let person = {name:'jack', age:20};
+
+    function display({name,age}){
+    console.log('Name: ',name);
+    console.log('Age: ', age);
+    }
+
+    display(person);
+    //let name = person.name;
+    //let age = person.age;
+
+    let {name,age} = person;
+    console.log(name, age);

@@ -35,3 +35,43 @@
     Sunidhi Thool
     20:55
     Sunidhi Thool
+
+
+
+# 12th feb
+Pranav Birje
+20:53
+Pranav Birje
+harshali gunjal
+20:53
+Harshali Gunjal
+Garima Rajput
+20:53
+Garima Rajput
+Sharayu Yawalkar
+20:53
+Sharayu Tadkal
+maheshwari wakode
+20:53
+Maheshwari Wakode
+Ashay Patole
+20:53
+Ashay Patole
+Anup Shinde
+20:53
+Anup Shinde
+Sarang Phasale
+20:53
+Sarang Phasale
+Bareen Javali
+20:54
+Bareen Javali
+VAISHNAVI KASAR
+20:54
+Vaishnavi Kasar
+Payal Shinde
+20:54
+Payal Shinde
+Vaishnavi Ahire
+20:54
+Vaishnavi Ahire

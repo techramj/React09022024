@@ -356,3 +356,28 @@ Vanilla JS: java script without any libraries.
 
     let {name,age} = person;
     console.log(name, age);
+
+-------------------------------------------------------
+    let person = { name: "Jack", age: 22 };
+
+    //let name = person.name;
+    //let age = person.age;
+
+    //let {name,age} = person;
+
+    //console.log(name,age);
+
+    function foo1(name, age) {
+    console.log(name, age);
+    }
+
+    function foo2(person) {
+    console.log(person.name, person.age);
+    }
+
+    function foo3({ name, age }) {
+    console.log(name, age);
+    }
+
+    foo1(person.name, person.age);
+    foo3(person);

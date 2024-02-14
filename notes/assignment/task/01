@@ -1,0 +1,11 @@
+You need to modify the 02-expense-project
+
+    App.js
+    -----
+     const expense = {name: 'TV', amount:500, date:new Date(2023,2,26)};
+     <ExpenseItem expense ={expense}></ExpenseItem>
+
+    props ={name:'TV', amout:300, date:new Date()}
+    ExpenseItem.js
+    --------------
+    modify expenseItem.js

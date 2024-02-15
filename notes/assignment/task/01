@@ -1,3 +1,19 @@
+Assignment:
+    Add one component which display : Good Afternoon
+    Greet
+    <Greet name="Sam"></Greet>
+    <Greet name="Jack"></Greet>
+
+Solution:
+    1. copy and paste the structure of 01-starting-setup that is downloaded in the zip file
+    2. npm install
+    3. npm start
+
+    add the code as per assignment
+
+
+    
+Assignment 2:
 You need to modify the 02-expense-project
 
     App.js

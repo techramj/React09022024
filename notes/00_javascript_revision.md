@@ -381,3 +381,6 @@ Vanilla JS: java script without any libraries.
 
     foo1(person.name, person.age);
     foo3(person);
+
+
+------------------------------------------------

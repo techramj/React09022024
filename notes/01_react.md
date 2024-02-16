@@ -18,7 +18,11 @@
 
 
 ## Rules
-1. don't return multiple element in a function
+1. write the component of similar type in a directory
+2. for every component, create a new file
+3. create function and name it in initcap. Eg: ExpenseItem
+4. return the function which contain jsx code using default
+5. don't return multiple element in a function
         
         //wrong
         function ExpenseItem() {
@@ -38,7 +42,7 @@
             );
         }
 
-2. pass the value using {} and don't pass object inside {}
+6. pass the value using {} and don't pass object inside {}
 
         function ExpenseItem() {
             const expenseDate = new Date(2023,2,10);
@@ -55,6 +59,11 @@
             );
         }
 
+
+7. we can pass variable or expression  inside {}
+
+        {1+1}
+        {Math.round(100.0334,2)}
 
 ## props
     props are the attributes
@@ -121,4 +130,17 @@
     }
 
 
+-----------------------------------------------
+App.js
+    Expenses.js => array of expenses
+        ExpenseItem.js  => expense
+            ExpenseDate.js
+
+        ExpenseItem.js  => expense
+           ExpensDate.js
+
+        ExpenseItem.js  => expense
+            ExpenseDate.js
+        ..
+        ..
 

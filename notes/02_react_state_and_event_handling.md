@@ -33,3 +33,19 @@
 2. what is our expectation => on the change of the value, react reevaluate the JSX
 3. for JSX reevaluation, react introduce the state
 
+
+### one way binding vs two way binding
+    one-way-binding
+    -------------
+    <input type="text"
+          onChange={(event)=>inputChangeHander('title', event.target.value)} />
+    </div>
+
+    two-way binding
+    ---------------
+    <input type="text"  value={title}
+          onChange={(event)=>inputChangeHander('title', event.target.value)} />
+    </div>
+
+
+

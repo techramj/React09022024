@@ -31,7 +31,7 @@
 ### updating Data via state
 1. By Default react doesn't care about the changes of variable inside the component.
 2. what is our expectation => on the change of the value, react reevaluate the JSX
-3. for JSX reevaluation, react introduce the state
+3. for JSX re-evaluation, react introduce the state
 
 
 ### one way binding vs two way binding
@@ -46,6 +46,8 @@
     <input type="text"  value={title}
           onChange={(event)=>inputChangeHander('title', event.target.value)} />
     </div>
+
+
 
 
 
